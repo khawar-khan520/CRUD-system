@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <tr>
+            <th>Employee Name</th>
+            <th>Attendance</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for employee in employees %}
+        <tr>
+            <td>{{ employee.name }}</td>
+            <td>{{ employee.attendance }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
